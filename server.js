@@ -2,10 +2,13 @@ const mongoose = require("mongoose");
 const Document = require("./Document");
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/google-docs-clone", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://priyankaghansela:abcd123@cluster0.6vuwb2z.mongodb.net/?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => {
     console.log("MongoDB connected");
   })
